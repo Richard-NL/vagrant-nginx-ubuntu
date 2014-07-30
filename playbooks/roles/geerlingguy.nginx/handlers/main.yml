@@ -1,3 +1,6 @@
 ---
 - name: restart nginx
   command: service nginx restart
+
+- name: start nginx
+  command: service nginx start
