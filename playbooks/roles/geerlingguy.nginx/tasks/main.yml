@@ -10,7 +10,7 @@
 - name: Ensure nginx is installed.
   apt: pkg=nginx state=installed update_cache=true
   notify:
-    - start nginx
+    - restart nginx
   when: ansible_os_family == 'Debian'
 
 - name: Copy nginx configuration in place.
